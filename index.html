@@ -6,163 +6,316 @@
     <title>Резюме — Меленцов Дмитрий</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
     <style>
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
             background-color: #f4f6f8;
-            color: #2e2e2e;
+            color: #1f2937;
+            line-height: 1.5;
         }
 
         .wrapper {
             display: flex;
-            max-width: 1260px;
-            margin: 0 auto;
+            max-width: 1100px;
+            margin: 40px auto;
             background: white;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-            border-radius: 12px;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
             overflow: hidden;
         }
 
+        /* Sidebar Styling */
         .sidebar {
-            width: 33%;
-            background: #2d3142;
-            color: white;
-            padding: 2rem;
+            width: 32%;
+            background: #2b2f3e;
+            color: #d1d5db;
+            padding: 2.5rem 2rem;
         }
 
-        .main {
-            width: 70%;
-            padding: 2rem 3rem;
+        .sidebar h1 {
+            color: #fff;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
         }
 
-        h1, h2, h3 {
-            margin: 0;
-        }
-
-        h1 {
-            font-size: 2rem;
-            font-weight: 700;
-        }
-
-        h2 {
-            font-size: 1.2rem;
-            color: #555;
-            margin-top: 2rem;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 0.3rem;
-        }
-
-        h3 {
-            margin-top: 1.5rem;
-            font-weight: 600;
-        }
-
-        ul {
-            padding-left: 1.2rem;
-        }
-
-        a {
-            color: #70c1b3;
-            text-decoration: none;
+        .sidebar .subtitle {
+            font-size: 1.1rem;
+            color: #9ca3af;
+            margin-bottom: 2.5rem;
+            display: block;
         }
 
         .sidebar h2 {
             color: #fff;
-            border-bottom: 1px solid #444;
-            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid #4b5563;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
         }
 
         .sidebar ul {
-            padding-left: 1rem;
+            padding: 0;
             list-style: none;
         }
 
-        .sidebar ul li {
-            margin-bottom: 0.6rem;
+        .sidebar li {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+            word-wrap: break-word;
+        }
+
+        .sidebar strong {
+            color: #fff;
+        }
+
+        .sidebar a {
+            color: #60a5fa;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .sidebar a:hover {
+            color: #93c5fd;
+        }
+
+        .sidebar-section {
+            margin-bottom: 2rem;
+        }
+
+        /* Main Content Styling */
+        .main {
+            width: 68%;
+            padding: 3rem;
+        }
+
+        .main h2 {
+            font-size: 1.5rem;
+            color: #111827;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .main h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .job-item, .project-item {
+            margin-bottom: 2rem;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .job-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1f2937;
+        }
+
+        .company-name {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .job-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .main ul {
+            padding-left: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        .main li {
+            margin-bottom: 0.5rem;
+            color: #374151;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 0.3rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .tech-stack {
+            font-size: 0.85rem;
+            color: #6b7280;
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 5px;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+                margin: 0;
+                border-radius: 0;
+            }
+            .sidebar, .main {
+                width: 100%;
+                padding: 1.5rem;
+                box-sizing: border-box;
+            }
         }
     </style>
 </head>
 <body>
 <div class="wrapper">
+    <!-- SIDEBAR -->
     <div class="sidebar">
         <h1>Дмитрий Меленцов</h1>
-        <p><em>Python / Go разработчик</em></p>
-        <h2>Контакты</h2>
-        <ul>
-            <li>Email: <a href="mailto:d.melentsov123@gmail.com">d.melentsov123@gmail.com</a></li>
-            <li>Telegram: <a href="https://t.me/d_melentsov">@d_melentsov</a></li>
-            <li>GitHub: <a href="https://github.com/DmitryMelentsov">DmitryMelentsov</a></li>
-            <li>Codeforces: <a href="https://codeforces.com/profile/PiRaJo4ek">Мой профиль</a></li>
-            <li>Город: Санкт-Петербург</li>
-        </ul>
-        <h2>Навыки</h2>
-        <ul>
-            <li><strong>Языки:</strong> Python, Go, Java, C++, JavaScript</li>
-            <li><strong>Базы данных:</strong> MySQL, SQLite, PostgreSQL</li>
-            <li><strong>Инструменты:</strong> Git, Docker, Linux, Bash</li>
-            <li><strong>Дополнительно:</strong> Bootstrap, Flask, REST API, тестирование на Go, тестирование на Python</li>
-            <li><strong>Английский:</strong> B1–B2</li>
-        </ul>
-        <h2>О себе</h2>
-        <p>
-            Программирование для меня это не просто будущее ремесло, но и главное увлечение.
-            В свободное время я частенько разрабатываю небольшие проекты: как для упрощения повседневных задач, так и просто ради интереса.
-            Люблю спорт, фильмы и готовить.
-        </p>
+        <span class="subtitle">Python / Go Backend Developer</span>
+
+        <div class="sidebar-section">
+            <h2>Контакты</h2>
+            <ul>
+                <li><strong>Email:</strong> <br><a href="mailto:d.melentsov123@gmail.com">d.melentsov123@gmail.com</a></li>
+                <li><strong>Telegram:</strong> <br><a href="https://t.me/d_melentsov">@d_melentsov</a></li>
+                <li><strong>GitHub:</strong> <br><a href="https://github.com/DmitryMelentsov">DmitryMelentsov</a></li>
+                <li><strong>Город:</strong> Санкт-Петербург</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Навыки</h2>
+            <ul>
+                <li><strong>Языки:</strong> Go, Python (Advanced), SQL, C++, Java</li>
+                <li><strong>БД:</strong> PostgreSQL, SQLite</li>
+                <li><strong>Инфраструктура:</strong> Docker, Git, Linux, Bash, CI/CD</li>
+                <li><strong>Тестирование:</strong> Pandora (Load testing), Unit-tests</li>
+                <li><strong>Libs & Tools:</strong> OpenCV, Pandas, Flask, GRPC</li>
+                <li><strong>Алгоритмы:</strong> Сильная алгоритмическая база (ВСОШ, ICPC)</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Языки</h2>
+            <ul>
+                <li>Русский — Родной</li>
+                <li>Английский — B1–B2 (Чтение документации)</li>
+            </ul>
+        </div>
     </div>
+
+    <!-- MAIN CONTENT -->
     <div class="main">
-        <h2>Цель</h2>
-        <p>Хочу пройти стажировку на позицию Python или Go разработчика. Планирую совмещать работу с учебой и продолжать
-            развитие в этой области.</p>
+        
+        <!-- Experience -->
+        <h2>Опыт работы</h2>
 
+        <div class="job-item">
+            <div class="job-header">
+                <span class="job-title">Стажер-разработчик</span>
+                <span class="job-date">Октябрь 2025 — настоящее время</span>
+            </div>
+            <div><strong>Яндекс</strong>, Направление разработки PayBox (Финтех)</div>
+            <ul>
+                <li>Участвую в разработке <strong>нового микросервиса на Go</strong>, который замещает legacy-решение на Python.</li>
+                <li>Работаю в рамках архитектуры <strong>DDD (Domain-Driven Design)</strong>.</li>
+                <li>Проводил <strong>нагрузочные тесты</strong> (используя <strong>Pandora</strong>):
+                    <ul>
+                        <li>В рамках задач по оптимизации выявил граничные значения RPS, приводящие к деградации системы.</li>
+                        <li>Обнаружил и локализовал узкие места в работе с БД.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="job-item">
+            <div class="job-header">
+                <span class="job-title">Python Developer</span>
+                <span class="job-date">Лето 2025 (Проектная работа)</span>
+            </div>
+            <div><a href="https://energy.metamodel.ru" class="company-name">Метамодель</a></div>
+            <ul>
+                <li>Реализовал алгоритм с использованием <strong>OpenCV</strong> для очистки изображений от шума и координатной сетки.</li>
+                <li>Разработал ПО для автоматической оцифровки графиков из документации.</li>
+            </ul>
+        </div>
+
+        <div class="job-item">
+            <div class="job-header">
+                <span class="job-title">Junior Developer</span>
+                <span class="job-date">Лето 2024 (Проектная работа)</span>
+            </div>
+            <div><a href="https://energy.metamodel.ru" class="company-name">Метамодель</a></div>
+            <ul>
+                <li>Занимался переносом и верификацией математических моделей и графиков из Excel в специализированное ПО для моделирования электростанций.</li>
+            </ul>
+        </div>
+
+        <!-- Education -->
         <h2>Образование</h2>
-        <p><strong>Университет ИТМО</strong>, факультет "Компьютерные технологии" — 3 курс</p>
+        <div class="job-item">
+            <div class="job-header">
+                <span class="job-title">Университет ИТМО</span>
+                <span class="job-date">2023 — 2027</span>
+            </div>
+            <div>Факультет "Компьютерные технологии", 3 курс</div>
+        </div>
+        
+        <h3>Дополнительные курсы</h3>
         <ul>
-            <li>Python — курс ШАДа (оценка: 4 / 5)</li>
-            <li>Golang — курс от T-Банка (110 / 110 баллов)</li>
+            <li><strong>Python (ШАД):</strong> Углубленный курс (Оценка: 4/5). Написание своего интерпретатора.</li>
+            <li><strong>Golang (T-Банк):</strong> Финтех курс (110/110 баллов).</li>
         </ul>
 
-        <h2>Олимпиады и достижения</h2>
+        <!-- Projects -->
+        <h2>Пет-проекты</h2>
+        
+        <div class="project-item">
+            <div class="job-header">
+                <span class="job-title">Python Virtual Machine</span>
+                <span class="tech-stack">Python, Bytecode</span>
+            </div>
+            <p>Интерпретатор байткода Python, разработанный в рамках курса Школы Анализа Данных (370/450 баллов). Реализация стековой машины и базовых инструкций.</p>
+            <a href="https://github.com/DmitryMelentsov/python-vm" class="project-link">GitHub ➝</a>
+        </div>
+
+        <div class="project-item">
+            <div class="job-header">
+                <span class="job-title">Smart Home System</span>
+                <span class="tech-stack">Go, PostgreSQL, Docker</span>
+            </div>
+            <p>Бэкенд системы управления IoT устройствами. Чистая архитектура, Unit-тесты, контейнеризация.</p>
+            <a href="https://github.com/DmitryMelentsov/smart-home" class="project-link">GitHub ➝</a>
+        </div>
+
+        <h2>Достижения</h2>
         <ul>
-            <li>ВСОШ, финал — 375 баллов</li>
-            <li>ВКОШП — 16 место</li>
-            <li>Всесибирская олимпиада школьников — победитель</li>
-            <li>Технокубок — призёр</li>
+            <li><strong>ICPC, КФУ:</strong> Участник студенческих командных олимпиад по программированию.</li>
+            <li><strong>ВСОШ (Информатика):</strong> Финал — 375 баллов.</li>
+            <li><strong>ВКОШП:</strong> 16 место (командная олимпиада).</li>
+            <li><strong>Всесибирская олимпиада:</strong> Победитель.</li>
+            <li><strong>Codeforces:</strong> Был активным участником соревнований в период олимпиадной подготовки.</li>
         </ul>
-
-        <h2>Проекты</h2>
-        <h3>Виртуальная машина на Python</h3>
-        <p>Интерпретатор байткода Python (ШАД, 370/450 баллов). <br>
-        <a href="https://github.com/DmitryMelentsov/python-vm">Ссылка на проект</a></p>
-
-        <h3>Кинобот и сайт</h3>
-        <p>Телеграм-бот и веб-приложение для поиска фильмов (описание, постер, ссылки), использует API Кинопоиска, SQLite, Quart. <br>
-        <a href="https://github.com/DmitryMelentsov/cinemabot">Ссылка на проект</a></p>
-
-        <h3>Smart Home (Go)</h3>
-        <p>Система управления устройствами на Go с использованием PostgreSQL, Docker и модульных тестов. <br>
-        <a href="https://github.com/DmitryMelentsov/smart-home">Ссылка на проект</a></p>
-
-        <h2>Опыт</h2>
-        <h3>Репетитор по программированию</h3>
-        <p>2 года. 7 учеников. Помощь в подготовке к ЕГЭ и обучении основам программирования.</p>
-
-        <h3><a href="https://energy.metamodel.ru">Метамодель (летняя подработка 2024 год)</a></h3>
-        <p>Перенос математических моделей и графиков из Excel в ПО для моделирования электростанций</p>
-
-        <h3><a href="https://energy.metamodel.ru">Метамодель (летняя подработка 2025 год)</a></h3>
-        <p>Работа над ПО для автоматической оцифровки графиков (Python)</p>
-
-        <h3><a href="https://github.com/manytask">Manytask</a></h3>
-        <p>Участвовал в доработке и развитии образовательного портала Manytask для ШАДа</p>
 
     </div>
 </div>
 </body>
 </html>
-
-
-
-
