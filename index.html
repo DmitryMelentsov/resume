@@ -26,7 +26,6 @@
             overflow: hidden;
         }
 
-        /* Sidebar Styling */
         .sidebar {
             width: 32%;
             background: #2b2f3e;
@@ -88,7 +87,6 @@
             margin-bottom: 2rem;
         }
 
-        /* Main Content Styling */
         .main {
             width: 68%;
             padding: 3rem;
@@ -189,7 +187,7 @@
     <!-- SIDEBAR -->
     <div class="sidebar">
         <h1>Дмитрий Меленцов</h1>
-        <span class="subtitle">Python / Go Backend Developer</span>
+        <span class="subtitle">Junior SOC Analyst / Security Engineer</span>
 
         <div class="sidebar-section">
             <h2>Контакты</h2>
@@ -197,6 +195,7 @@
                 <li><strong>Email:</strong> <br><a href="mailto:d.melentsov123@gmail.com">d.melentsov123@gmail.com</a></li>
                 <li><strong>Telegram:</strong> <br><a href="https://t.me/d_melentsov">@d_melentsov</a></li>
                 <li><strong>GitHub:</strong> <br><a href="https://github.com/DmitryMelentsov">DmitryMelentsov</a></li>
+                <li><strong>TryHackMe:</strong> <br><a href="https://tryhackme.com/p/cladenkiy">cladenkiy</a></li>
                 <li><strong>Город:</strong> Санкт-Петербург</li>
             </ul>
         </div>
@@ -204,11 +203,13 @@
         <div class="sidebar-section">
             <h2>Навыки</h2>
             <ul>
-                <li><strong>Языки:</strong> Go, Python, C++, Java</li>
-                <li><strong>БД:</strong> PostgreSQL, Redis</li>
-                <li><strong>Инфраструктура:</strong> Docker, Git, Linux, Bash, Gitlab CI/CD, Ansible, Kubernetes, Terraform</li>
-                <li><strong>Тестирование:</strong> Pandora, Unit-tests</li>
-                <li><strong>Libs & Tools:</strong> FastAPI, GRPC, Swagger, OpenAPI, gin</li>
+                <li><strong>Мониторинг & SIEM:</strong> Splunk, ELK Stack, Log Analysis, Event Correlation</li>
+                <li><strong>Сети:</strong> TCP/IP, DNS, HTTP(S), TLS, ARP, ICMP, NAT, routing, tunneling (TUN), iptables, Wireshark, nmap, IDS/IPS</li>
+                <li><strong>Анализ угроз:</strong> MITRE ATT&CK, IOC Analysis, Malware Triage, Threat Intelligence, Incident Response</li>
+                <li><strong>Инструменты:</strong> Burp Suite, Metasploit, VirusTotal, OSINT</li>
+                <li><strong>ОС:</strong> Linux, Bash, Windows AD</li>
+                <li><strong>Разработка:</strong> Go, Python, C++, Java</li>
+                <li><strong>Инфраструктура:</strong> Docker, Kubernetes, Ansible, Terraform, GitLab CI/CD</li>
                 <li><strong>Алгоритмы:</strong> Сильная алгоритмическая база (ВСОШ, ICPC)</li>
             </ul>
         </div>
@@ -217,50 +218,44 @@
             <h2>Языки</h2>
             <ul>
                 <li>Русский</li>
-                <li>Английский - B1–B2 (Чтение документации)</li>
+                <li>Английский — B1–B2 (Чтение документации)</li>
             </ul>
         </div>
     </div>
 
     <!-- MAIN CONTENT -->
     <div class="main">
-        
+
+        <h2>Обо мне</h2>
+        <p style="color: #374151; margin-bottom: 0;">
+            Студент ИТМО с сильной технической базой: backend-разработка, DevOps-практики и понимание работы систем изнутри. Прошёл курс по кибербезопасности (ШАД), периодически решаю CTF и практические задачи на TryHackMe. Увлекаюсь сетевыми технологиями — в свободное время пишу утилиты, связанные с сетевым стеком. Хочу развиваться в направлении SOC-аналитики или в будущем DevSecOps.
+        </p>
+
         <!-- Experience -->
         <h2>Опыт работы</h2>
 
         <div class="job-item">
             <div class="job-header">
-                <span class="job-title">Стажер-разработчик</span>
-                <span class="job-date">Октябрь 2025 — Февраль 2026</span>
+                <span class="job-title">Стажёр-разработчик</span>
+                <span class="job-date">Октябрь 2025 - Февраль 2026</span>
             </div>
-            <div><strong>Яндекс</strong>, Направление разработки PayBox (Финтех)</div>
+            <div><strong>Яндекс</strong>, направление PayBox (Финтех)</div>
             <ul>
-                <li>Участвовал в разработке сервиса на Go</li>
-                <li>Работал в рамках архитектуры DDD</li>
-                <li>Проводил нагрузочные тесты: выявил граничные значения RPS, приводящие к деградации системы, по результатам тестов предложил и реализовал 2 эффективные оптимизации</li>
+                <li>Разработка backend-сервиса на Go в архитектуре DDD - понимание структуры промышленных систем изнутри</li>
+                <li>Нагрузочное тестирование (Pandora): выявил граничные значения RPS при деградации, предложил и реализовал 2 оптимизации - навык, применимый при анализе аномальной активности</li>
+                <li>Работа с высоконагруженной финтех-инфраструктурой</li>
             </ul>
         </div>
 
         <div class="job-item">
             <div class="job-header">
-                <span class="job-title">Python разработчик</span>
-                <span class="job-date">Лето 2025 (Летняя подработка)</span>
+                <span class="job-title">Python-разработчик</span>
+                <span class="job-date">Лето 2025</span>
             </div>
             <div><a href="https://energy.metamodel.ru" class="company-name">Метамодель</a></div>
             <ul>
-                <li>Реализовал алгоритм с использованием <strong>OpenCV</strong> для очистки изображений от шума и координатной сетки.</li>
+                <li>Реализовал алгоритм на <strong>OpenCV</strong> для очистки изображений</li>
                 <li>Разработал ПО для автоматической оцифровки графиков</li>
-            </ul>
-        </div>
-
-        <div class="job-item">
-            <div class="job-header">
-                <span class="job-title">Стажер</span>
-                <span class="job-date">Лето 2024 (Летняя подработка)</span>
-            </div>
-            <div><a href="https://energy.metamodel.ru" class="company-name">Метамодель</a></div>
-            <ul>
-                <li>Занимался переносом и верификацией математических моделей и графиков из Excel в специализированное ПО для моделирования электростанций.</li>
             </ul>
         </div>
 
@@ -269,38 +264,45 @@
         <div class="job-item">
             <div class="job-header">
                 <span class="job-title">Университет ИТМО</span>
-                <span class="job-date">2023 — 2027</span>
+                <span class="job-date">2023 - 2027</span>
             </div>
-            <div>Факультет "Компьютерные технологии", 3 курс</div>
+            <div>Факультет «Компьютерные технологии», 3 курс</div>
         </div>
-        
+
         <h3>Дополнительные курсы</h3>
         <ul>
-            <li><strong>DevOps (MTS):</strong>Неплохой курс по DevOps, в рамках него потрогал Ansible, Kuber, Docker, GitLab CI/CD</li>
-            <li><strong>Кибербезопасность (ШАД):</strong> Самый сложный и интересный курс, из тех, что я проходил. После прохождения этого курса периодически порешиваю CTF-ки</li>
-            <li><strong>Python (ШАД):</strong> Углубленный курс (Оценка: 4/5). Написание своего интерпретатора.</li>
-            <li><strong>Golang (T-Банк):</strong> Финтех курс (110/110 баллов).</li>
+            <li><strong>Кибербезопасность (ШАД):</strong> Самый сложный и интересный из пройденных курсов: криптография, сетевые атаки, безопасность ОС, веб-уязвимости. После прохождения - периодически решаю CTF самостоятельно.</li>
+            <li><strong>DevOps (MTS):</strong> Ansible, Kubernetes, Docker, GitLab CI/CD - практическое понимание инфраструктуры, необходимое для DevSecOps.</li>
+            <li><strong>Python (ШАД):</strong> Углублённый курс (оценка: 4/5). Написание своего интерпретатора.</li>
+            <li><strong>Golang (T-Банк):</strong> Финтех-курс (110/110 баллов).</li>
         </ul>
 
         <!-- Projects -->
         <h2>Пет-проекты</h2>
-        
+
         <div class="project-item">
             <div class="job-header">
-                <span class="job-title">Python Virtual Machine</span>
-                <span class="tech-stack">Python, Bytecode</span>
+                <span class="job-title">Кастомный VPN</span>
+                <span class="tech-stack">Go, Python, Сетевое программирование</span>
             </div>
-            <p>Интерпретатор байткода Python, разработанный в рамках курса Школы Анализа Данных (370/450 баллов). Реализация стековой машины и базовых инструкций.</p>
-            <a href="https://github.com/DmitryMelentsov/python-vm" class="project-link">GitHub ➝</a>
+            <p>VPN для личного пользования, написанный с нуля (~70% готовности). Реализация собственного протокола туннелирования, работа с сетевыми интерфейсами на низком уровне. Проект дал мне понимание того, как трафик выглядит под капотом - что напрямую применимо в сетевой форензике и анализе трафика</p>
         </div>
 
         <div class="project-item">
             <div class="job-header">
-                <span class="job-title">Cinema Bot</span>
-                <span class="tech-stack">Python, Quart, SQLite</span>
+                <span class="job-title">Утилита обхода белых списков</span>
+                <span class="tech-stack">Go / Kotlin, Сети</span>
             </div>
-            <p>Телеграм-бот и веб-приложение для поиска фильмов (описание, постер, ссылки). Использует API Кинопоиска, SQLite и асинхронный фреймворк Quart.</p>
-            <a href="https://github.com/DmitryMelentsov/cinemabot" class="project-link">GitHub ➝</a>
+            <p>Инструмент для обхода сетевых ограничений на основе белых списков. Клиент и сервер используют разрешённый сторонний ресурс как транспортный посредник для обмена IP-пакетами</p>
+        </div>
+
+        <div class="project-item">
+            <div class="job-header">
+                <span class="job-title">CTF / TryHackMe</span>
+                <span class="tech-stack">Web, Forensics, Privesc, OSINT</span>
+            </div>
+            <p>100+ практических задач на TryHackMe (в основном hands-on лабы): web exploitation, privilege escalation, network forensics, reverse engineering, OSINT. После курса ШАД поучаствовал в нескольких CTF-соревнованиях</p>
+            <a href="https://tryhackme.com/p/cladenkiy" class="project-link">TryHackMe профиль --></a>
         </div>
 
         <div class="project-item">
@@ -308,24 +310,30 @@
                 <span class="job-title">Smart Home System</span>
                 <span class="tech-stack">Go, PostgreSQL, Docker</span>
             </div>
-            <p>Бэкенд системы управления IoT устройствами. Чистая архитектура, Unit-тесты, контейнеризация.</p>
-            <a href="https://github.com/DmitryMelentsov/smart-home" class="project-link">GitHub ➝</a>
+            <p>Бэкенд системы управления IoT-устройствами. Чистая архитектура, unit-тесты, контейнеризация.</p>
+            <a href="https://github.com/DmitryMelentsov/smart-home" class="project-link">GitHub --></a>
+        </div>
+
+        <div class="project-item">
+            <div class="job-header">
+                <span class="job-title">Python Virtual Machine</span>
+                <span class="tech-stack">Python, Bytecode</span>
+            </div>
+            <p>Интерпретатор байткода Python в рамках курса ШАД (370/450 баллов). Понимание модели исполнения кода</p>
+            <a href="https://github.com/DmitryMelentsov/python-vm" class="project-link">GitHub --></a>
         </div>
 
         <h2>Достижения</h2>
         <ul>
+            <li><strong>RedShift CTF:</strong> 53 место из ~200 активных команд</li>
             <li><strong>ICPC, КФУ:</strong> Участник студенческих командных олимпиад по программированию.</li>
             <li><strong>ВСОШ (Информатика):</strong> Финал — 375 баллов.</li>
             <li><strong>ВКОШП:</strong> 16 место (командная олимпиада).</li>
             <li><strong>Всесибирская олимпиада:</strong> Победитель.</li>
-            <li><strong>Codeforces:</strong> Был активным участником соревнований в период олимпиадной подготовки.</li>
+            <li><strong>Codeforces:</strong> Активный участник соревнований в период олимпиадной подготовки.</li>
         </ul>
 
     </div>
 </div>
 </body>
 </html>
-
-
-
-
