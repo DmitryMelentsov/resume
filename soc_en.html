@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Resume - Dmitry Melentsov</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f6f8;
+            color: #1f2937;
+            line-height: 1.5;
+        }
+
+        .wrapper {
+            display: flex;
+            max-width: 1100px;
+            margin: 40px auto;
+            background: white;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 32%;
+            background: #2b2f3e;
+            color: #d1d5db;
+            padding: 2.5rem 2rem;
+        }
+
+        .sidebar h1 {
+            color: #fff;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .sidebar .subtitle {
+            font-size: 1.1rem;
+            color: #9ca3af;
+            margin-bottom: 2.5rem;
+            display: block;
+        }
+
+        .sidebar h2 {
+            color: #fff;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid #4b5563;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+
+        .sidebar ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+            word-wrap: break-word;
+        }
+
+        .sidebar strong {
+            color: #fff;
+        }
+
+        .sidebar a {
+            color: #60a5fa;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .sidebar a:hover {
+            color: #93c5fd;
+        }
+
+        .sidebar-section {
+            margin-bottom: 2rem;
+        }
+
+        .main {
+            width: 68%;
+            padding: 3rem;
+        }
+
+        .main h2 {
+            font-size: 1.5rem;
+            color: #111827;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .main h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .job-item, .project-item {
+            margin-bottom: 2rem;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .job-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1f2937;
+        }
+
+        .company-name {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .job-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .main ul {
+            padding-left: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        .main li {
+            margin-bottom: 0.5rem;
+            color: #374151;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 0.3rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .tech-stack {
+            font-size: 0.85rem;
+            color: #6b7280;
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 5px;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+                margin: 0;
+                border-radius: 0;
+            }
+            .sidebar, .main {
+                width: 100%;
+                padding: 1.5rem;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h1>Dmitry Melentsov</h1>
+        <span class="subtitle">Junior SOC Analyst</span>
+
+        <div class="sidebar-section">
+            <h2>Contacts</h2>
+            <ul>
+                <li><strong>Email:</strong> <br><a href="mailto:d.melentsov123@gmail.com">d.melentsov123@gmail.com</a></li>
+                <li><strong>Telegram:</strong> <br><a href="https://t.me/d_melentsov">@d_melentsov</a></li>
+                <li><strong>GitHub:</strong> <br><a href="https://github.com/DmitryMelentsov">DmitryMelentsov</a></li>
+                <li><strong>TryHackMe:</strong> <br><a href="https://tryhackme.com/p/cladenkiy">cladenkiy</a></li>
+                <li><strong>Location:</strong> Saint Petersburg</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Monitoring & SIEM:</strong> Splunk, ELK Stack, Log Analysis, Event Correlation</li>
+                <li><strong>Networking:</strong> TCP/IP, DNS, HTTP(S), TLS, ARP, ICMP, NAT, routing, tunneling (TUN), iptables, Wireshark, nmap, IDS/IPS</li>
+                <li><strong>Threat Analysis:</strong> MITRE ATT&CK, IOC Analysis, Malware Triage, Threat Intelligence, Incident Response</li>
+                <li><strong>Tools:</strong> Burp Suite, Metasploit, VirusTotal, OSINT</li>
+                <li><strong>OS:</strong> Linux, Bash, Windows AD</li>
+                <li><strong>Development:</strong> Go, Python, C++, Java</li>
+                <li><strong>Infrastructure:</strong> Docker, Kubernetes, Ansible, Terraform, GitLab CI/CD</li>
+                <li><strong>Algorithms:</strong> Strong algorithmic background (All-Russian Olympiad, ICPC)</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Languages</h2>
+            <ul>
+                <li>Russian — Native</li>
+                <li>English — B1–B2 (Reading documentation)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <h2>About Me</h2>
+        <p style="color: #374151; margin-bottom: 0;">
+            ITMO University student with a strong technical background: backend development, DevOps practices, and an understanding of how systems work under the hood. Completed a cybersecurity course (Yandex School of Data Analysis), regularly solve CTF challenges and hands-on labs on TryHackMe. Interested in networking — spend free time building network utilities. Looking to grow in SOC analysis or DevSecOps.
+        </p>
+
+        <!-- Experience -->
+        <h2>Work Experience</h2>
+
+        <div class="job-item">
+            <div class="job-header">
+                <span class="job-title">Developer Intern</span>
+                <span class="job-date">October 2025 — February 2026</span>
+            </div>
+            <div><strong>Yandex</strong>, PayBox division (Fintech)</div>
+            <ul>
+                <li>Backend service development in Go using DDD architecture — hands-on understanding of production system internals</li>
+                <li>Load testing (Pandora): identified RPS thresholds causing system degradation, proposed and implemented 2 optimizations — a skill applicable to anomalous traffic analysis</li>
+                <li>Worked with high-load fintech infrastructure</li>
+            </ul>
+        </div>
+
+        <div class="job-item">
+            <div class="job-header">
+                <span class="job-title">Python Developer</span>
+                <span class="job-date">Summer 2025</span>
+            </div>
+            <div><a href="https://energy.metamodel.ru" class="company-name">Metamodel</a></div>
+            <ul>
+                <li>Implemented an <strong>OpenCV</strong>-based algorithm for image noise and grid removal</li>
+                <li>Developed software for automatic digitization of charts</li>
+            </ul>
+        </div>
+
+        <!-- Education -->
+        <h2>Education</h2>
+        <div class="job-item">
+            <div class="job-header">
+                <span class="job-title">ITMO University</span>
+                <span class="job-date">2023 — 2027</span>
+            </div>
+            <div>Faculty of Computer Technologies, 3rd year</div>
+        </div>
+
+        <h3>Additional Courses</h3>
+        <ul>
+            <li><strong>Cybersecurity (Yandex SDA):</strong> The most challenging and engaging course I have taken: cryptography, network attacks, OS security, web vulnerabilities. After completing it — regularly participate in CTF competitions independently.</li>
+            <li><strong>DevOps (MTS):</strong> Ansible, Kubernetes, Docker, GitLab CI/CD — practical understanding of infrastructure relevant to DevSecOps.</li>
+            <li><strong>Python (Yandex SDA):</strong> Advanced course (grade: 4/5). Built a custom interpreter.</li>
+            <li><strong>Golang (T-Bank):</strong> Fintech course (110/110 points).</li>
+        </ul>
+
+        <!-- Projects -->
+        <h2>Pet Projects</h2>
+
+        <div class="project-item">
+            <div class="job-header">
+                <span class="job-title">Custom VPN</span>
+                <span class="tech-stack">Go, Python, Network Programming</span>
+            </div>
+            <p>A VPN for personal use, built from scratch (~70% complete). Implemented a custom tunneling protocol over a TUN interface, with low-level network interface handling and manual IP packet processing. The project gave me a deep practical understanding of how traffic looks under the hood — directly applicable to network forensics and traffic analysis.</p>
+        </div>
+
+        <div class="project-item">
+            <div class="job-header">
+                <span class="job-title">Whitelist Bypass Utility</span>
+                <span class="tech-stack">Go, Kotlin, Networking</span>
+            </div>
+            <p>A tool for bypassing network restrictions based on IP/domain whitelists. The client and server use an allowed third-party resource as a transport intermediary for exchanging IP packets — effectively a covert channel over legitimate traffic.</p>
+        </div>
+
+        <div class="project-item">
+            <div class="job-header">
+                <span class="job-title">CTF / TryHackMe</span>
+                <span class="tech-stack">Web, Forensics, Privesc, OSINT</span>
+            </div>
+            <p>100+ practical challenges on TryHackMe (mostly hands-on labs): web exploitation, privilege escalation, network forensics, reverse engineering, OSINT. After the Yandex SDA course, participated in several CTF competitions.</p>
+            <a href="https://tryhackme.com/p/cladenkiy" class="project-link">TryHackMe profile ➝</a>
+        </div>
+
+        <div class="project-item">
+            <div class="job-header">
+                <span class="job-title">Smart Home System</span>
+                <span class="tech-stack">Go, PostgreSQL, Docker</span>
+            </div>
+            <p>Backend for an IoT device management system. Clean architecture, unit tests, containerization.</p>
+            <a href="https://github.com/DmitryMelentsov/smart-home" class="project-link">GitHub ➝</a>
+        </div>
+
+        <div class="project-item">
+            <div class="job-header">
+                <span class="job-title">Python Virtual Machine</span>
+                <span class="tech-stack">Python, Bytecode</span>
+            </div>
+            <p>A Python bytecode interpreter built as part of the Yandex SDA course (370/450 points). Deep understanding of code execution models — applicable in reverse engineering.</p>
+            <a href="https://github.com/DmitryMelentsov/python-vm" class="project-link">GitHub ➝</a>
+        </div>
+
+        <h2>Achievements</h2>
+        <ul>
+            <li><strong>RedShift CTF:</strong> 53rd place out of ~200 active teams.</li>
+            <li><strong>ICPC, KFU:</strong> Participant in collegiate team programming competitions.</li>
+            <li><strong>All-Russian Olympiad in Informatics:</strong> National Finals — 375 points.</li>
+            <li><strong>VKOSHP:</strong> 16th place (team competition).</li>
+            <li><strong>All-Siberian Olympiad:</strong> Winner.</li>
+            <li><strong>Codeforces:</strong> Active competitor during olympiad preparation period.</li>
+        </ul>
+
+    </div>
+</div>
+</body>
+</html>
