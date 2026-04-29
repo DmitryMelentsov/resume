@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Меленцов Дмитрий</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f6f8;
+            color: #1f2937;
+            line-height: 1.55;
+        }
+
+        .wrapper {
+            display: flex;
+            max-width: 1100px;
+            margin: 40px auto;
+            background: white;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.07);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* ── SIDEBAR ── */
+        .sidebar {
+            width: 32%;
+            background: #2b2f3e;
+            color: #d1d5db;
+            padding: 2.8rem 2rem;
+        }
+
+        .sidebar h1 {
+            color: #fff;
+            font-size: 1.8rem;
+            margin-bottom: 0.4rem;
+            line-height: 1.2;
+        }
+
+        .sidebar .subtitle {
+            font-size: 0.85rem;
+            color: #9ca3af;
+            margin-bottom: 2.8rem;
+            display: block;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .sidebar h2 {
+            color: #fff;
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-bottom: 1px solid #3d4354;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.1rem;
+            margin-top: 2.2rem;
+            font-weight: 600;
+        }
+
+        .sidebar ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            word-wrap: break-word;
+            color: #b0b8c8;
+        }
+
+        .sidebar strong {
+            color: #e5e7eb;
+            font-weight: 600;
+            display: block;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 3px;
+        }
+
+        .sidebar a {
+            color: #60a5fa;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .sidebar a:hover { color: #93c5fd; }
+
+        .sidebar-section { margin-bottom: 0.5rem; }
+
+        /* skill tags */
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 2px;
+        }
+
+        .skill-tag {
+            font-size: 0.72rem;
+            background: #363b4e;
+            color: #a8b4c8;
+            border: 1px solid #444c62;
+            border-radius: 4px;
+            padding: 2px 8px;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .skill-group {
+            margin-bottom: 1.1rem;
+        }
+
+        .skill-group-label {
+            color: #e5e7eb;
+            font-weight: 600;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        /* ── MAIN ── */
+        .main {
+            width: 68%;
+            padding: 3rem 3.2rem;
+        }
+
+        .main h2 {
+            font-size: 0.72rem;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.8rem;
+            margin-top: 2.8rem;
+        }
+
+        .main h2:first-of-type { margin-top: 0; }
+
+        /* job block */
+        .job-item {
+            margin-bottom: 2.2rem;
+        }
+
+        .job-item.edu {
+            padding-left: 1rem;
+            border-left: 2px solid #2563eb;
+        }
+
+        .project-item {
+            margin-bottom: 2rem;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 0.25rem;
+            gap: 8px;
+        }
+
+        .job-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .company-name {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .job-meta {
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-bottom: 0.6rem;
+        }
+
+        .job-date {
+            font-size: 0.8rem;
+            color: #9ca3af;
+            font-weight: 500;
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 4px;
+            padding: 1px 8px;
+            white-space: nowrap;
+        }
+
+        .main ul {
+            padding-left: 0;
+            margin-top: 0.5rem;
+            list-style: none;
+        }
+
+        .main li {
+            margin-bottom: 0.5rem;
+            color: #4b5563;
+            font-size: 0.9rem;
+            padding-left: 1rem;
+            position: relative;
+            line-height: 1.55;
+        }
+
+        .main li::before {
+            content: '·';
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-size: 1.1rem;
+            line-height: 1.4;
+            font-weight: 700;
+        }
+
+        .main li strong { color: #1f2937; font-weight: 600; }
+
+        /* plain list for achievements/courses */
+        .plain-list { padding-left: 1.2rem !important; list-style: disc !important; }
+        .plain-list li { padding-left: 0 !important; }
+        .plain-list li::before { display: none !important; }
+
+        p {
+            color: #4b5563;
+            font-size: 0.9rem;
+            margin: 0;
+            line-height: 1.65;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 0.35rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-size: 0.83rem;
+            font-weight: 600;
+        }
+        .project-link:hover { text-decoration: underline; }
+
+        .tech-stack {
+            font-size: 0.72rem;
+            color: #6b7280;
+            background: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            padding: 1px 7px;
+            border-radius: 4px;
+            margin-left: 5px;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        h3 {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #374151;
+            margin: 1.4rem 0 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* section divider */
+        .section-gap { margin-top: 0; }
+
+        @media (max-width: 768px) {
+            .wrapper { flex-direction: column; margin: 0; border-radius: 0; }
+            .sidebar, .main { width: 100%; padding: 1.5rem; box-sizing: border-box; }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h1>Дмитрий Меленцов</h1>
+        <span class="subtitle">Go Developer · Security</span>
+
+        <div class="sidebar-section">
+            <h2>Контакты</h2>
+            <ul>
+                <li><strong>Email</strong><a href="mailto:d.melentsov123@gmail.com">d.melentsov123@gmail.com</a></li>
+                <li><strong>Telegram</strong><a href="https://t.me/d_melentsov">@d_melentsov</a></li>
+                <li><strong>GitHub</strong><a href="https://github.com/DmitryMelentsov">DmitryMelentsov</a></li>
+                <li><strong>TryHackMe</strong><a href="https://tryhackme.com/p/cladenkiy">cladenkiy</a></li>
+                <li><strong>Город</strong>Санкт-Петербург</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Навыки</h2>
+
+            <div class="skill-group">
+                <span class="skill-group-label">Go</span>
+                <div class="skill-tags">
+                    <span class="skill-tag">concurrency</span>
+                    <span class="skill-tag">profiling</span>
+                    <span class="skill-tag">unit-тесты</span>
+                    <span class="skill-tag">DDD</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <span class="skill-group-label">Сети</span>
+                <div class="skill-tags">
+                    <span class="skill-tag">TCP/IP</span>
+                    <span class="skill-tag">TLS/mTLS</span>
+                    <span class="skill-tag">TUN</span>
+                    <span class="skill-tag">iptables</span>
+                    <span class="skill-tag">Wireshark</span>
+                    <span class="skill-tag">nmap</span>
+                    <span class="skill-tag">PKI</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <span class="skill-group-label">Linux Internals</span>
+                <div class="skill-tags">
+                    <span class="skill-tag">procfs</span>
+                    <span class="skill-tag">syscalls</span>
+                    <span class="skill-tag">netlink</span>
+                    <span class="skill-tag">Bash</span>
+                    <span class="skill-tag">inotify</span>
+                    <span class="skill-tag">seccomp</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <span class="skill-group-label">Security</span>
+                <div class="skill-tags">
+                    <span class="skill-tag">Burp Suite</span>
+                    <span class="skill-tag">Metasploit</span>
+                    <span class="skill-tag">Ghidra</span>
+                    <span class="skill-tag">hashcat</span>
+                    <span class="skill-tag">nmap</span>
+                    <span class="skill-tag">google</span>
+                    <span class="skill-tag">OWASP Top 10</span>
+                    <span class="skill-tag">pcap / Wireshark</span>
+                    <span class="skill-tag">Brim</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <span class="skill-group-label">Разработка</span>
+                <div class="skill-tags">
+                    <span class="skill-tag">Go</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C++</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <span class="skill-group-label">Инфраструктура</span>
+                <div class="skill-tags">
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">Ansible</span>
+                    <span class="skill-tag">GitLab CI/CD</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Языки</h2>
+            <ul>
+                <li style="margin-bottom:0.4rem;">Русский</li>
+                <li>Английский - B1–B2</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <h2>Обо мне</h2>
+        <p>Go-разработчик с практикой в кибербезопасности. Писал продакшн-сервисы на Go в Яндексе (финтех),
+            реализовал кастомный VPN с нуля (TUN-интерфейс, собственный протокол туннелирования),
+            в свободное время увлекаюсь Linux и сетями, стараюсь каждый день узнавать учто-то новое по этим темам
+            Понимаю атаки изнутри: регулярно решаю CTF (мой профиль это web, pentest, privilege escalation), прошёл курс по безопасности от ШАДа</p>
+
+        <h2 class="section-gap">Опыт работы</h2>
+
+        <div class="job-item">
+            <div class="job-header">
+                <span class="job-title">Разработчик</span>
+                <span class="job-date">Февраль 2026 - н.в.</span>
+            </div>
+            <div class="job-meta"><a href="https://energy.metamodel.ru/" class="company-name">Метамодель</a> · ПО «Метамодель» (АСДУ ТЭС/ГК)</div>
+            <ul>
+                <li>Реализовал <strong>SSO-аутентификацию с нуля</strong> для приложения по управлению энергорежимами электростанций - замена самописного логин/пароль в базе</li>
+                <li>Работаю с разнородным стеком в условиях legacy: <strong>Java</strong> (основная часть системы), Python, интеграции с внешними сервисами</li>
+            </ul>
+        </div>
+
+        <div class="job-item">
+            <div class="job-header">
+                <span class="job-title">Ментор по Go и Java</span>
+                <span class="job-date">Март 2026 - н.в.</span>
+            </div>
+            <div class="job-meta"><strong>Университет ИТМО</strong></div>
+            <ul>
+                <li>Ментор двух курсов в ИТМО: <strong>Go</strong> и <strong>Java</strong> - код-ревью, разборы заданий, объяснение сложных концепций (конкурентность, архитектура)</li>
+            </ul>
+        </div>
+
+        <div class="job-item">
+            <div class="job-header">
+                <span class="job-title">Стажёр-разработчик (Go)</span>
+                <span class="job-date">Октябрь 2025 - Февраль 2026</span>
+            </div>
+            <div class="job-meta"><strong>Яндекс</strong>, направление PayBox (Финтех)</div>
+            <ul>
+                <li>Разработка <strong>нагруженного backend-сервиса на Go</strong> в архитектуре DDD - понимание структуры промышленных систем изнутри</li>
+                <li>Нагрузочное тестирование (Pandora): выявил граничные значения RPS при деградации, предложил и реализовал 2 оптимизации</li>
+                <li>Работа с высоконагруженной финтех-инфраструктурой</li>
+            </ul>
+        </div>
+
+        <div class="job-item">
+            <div class="job-header">
+                <span class="job-title">Python-разработчик (стажировка)</span>
+                <span class="job-date">Лето 2025</span>
+            </div>
+            <div class="job-meta"><a href="https://energy.metamodel.ru/" class="company-name">Метамодель</a></div>
+            <ul>
+                <li>Реализовал алгоритм на <strong>OpenCV</strong> для очистки изображений</li>
+                <li>Разработал ПО для автоматической оцифровки графиков</li>
+            </ul>
+        </div>
+
+        <h2>Образование</h2>
+
+        <div class="job-item edu">
+            <div class="job-header">
+                <span class="job-title">Университет ИТМО</span>
+                <span class="job-date">2023 - 2027</span>
+            </div>
+            <div class="job-meta">Факультет «Компьютерные технологии», 3 курс</div>
+        </div>
+
+        <h3>Дополнительные курсы</h3>
+        <ul class="plain-list">
+            <li><strong>Кибербезопасность (ШАД):</strong> криптография, сетевые атаки, безопасность ОС, веб-уязвимости. После прохождения - периодически решаю CTF самостоятельно.</li>
+            <li><strong>DevOps (MTS):</strong> Ansible, Kubernetes, Docker, GitLab CI/CD - практическое понимание инфраструктуры.</li>
+            <li><strong>Python (ШАД):</strong> углублённый курс (оценка: 4/5), написание своего интерпретатора.</li>
+            <li><strong>Golang (T-Банк):</strong> финтех-курс - 110/110 баллов.</li>
+        </ul>
+
+        <h2>Пет-проекты</h2>
+
+        <div class="project-item">
+            <div class="job-header">
+                <span class="job-title">Кастомный VPN</span>
+                <span class="tech-stack">Go · Python · Сети</span>
+            </div>
+            <p>VPN для личного пользования, написанный с нуля (~70% готовности). Реализация собственного протокола туннелирования, работа с TUN-интерфейсом, netlink-сокетами и таблицами маршрутизации. Проект дал понимание того, как трафик выглядит на уровне ядра - что напрямую применимо при написании агентов мониторинга сети и анализе трафика.</p>
+        </div>
+
+        <div class="project-item">
+            <div class="job-header">
+                <span class="job-title">Утилита обхода белых списков</span>
+                <span class="tech-stack">Go · Kotlin · Сети</span>
+            </div>
+            <p>Инструмент для обхода сетевых ограничений на основе белых списков. Клиент и сервер используют разрешённый сторонний ресурс как транспортный посредник для обмена IP-пакетами.</p>
+        </div>
+
+        <div class="project-item">
+            <div class="job-header">
+                <span class="job-title">CTF / TryHackMe</span>
+                <span class="tech-stack">Web · Forensics · Privesc · OSINT</span>
+            </div>
+            <p>100+ практических задач на TryHackMe: web exploitation, privilege escalation, network forensics, reverse engineering, OSINT. После курса ШАД поучаствовал в нескольких CTF-соревнованиях. Понимание атак изнутри - основа для написания детектирующей логики и secure code review.</p>
+            <a href="https://tryhackme.com/p/cladenkiy" class="project-link">TryHackMe профиль →</a>
+        </div>
+
+        <div class="project-item">
+            <div class="job-header">
+                <span class="job-title">Smart Home System</span>
+                <span class="tech-stack">Go · PostgreSQL · Docker</span>
+            </div>
+            <p>Бэкенд системы управления IoT-устройствами. Чистая архитектура, unit-тесты, контейнеризация.</p>
+            <a href="https://github.com/DmitryMelentsov/smart-home" class="project-link">GitHub →</a>
+        </div>
+
+        <div class="project-item">
+            <div class="job-header">
+                <span class="job-title">Python Virtual Machine</span>
+                <span class="tech-stack">Python · Bytecode</span>
+            </div>
+            <p>Интерпретатор байткода Python в рамках курса ШАД (370/450 баллов). Понимание модели исполнения кода.</p>
+            <a href="https://github.com/DmitryMelentsov/python-vm" class="project-link">GitHub →</a>
+        </div>
+
+        <h2>Достижения</h2>
+        <ul class="plain-list">
+            <li><strong>АльфаCTF:</strong> 13е место из 450 в студенческом треке</li>
+            <li><strong>RedShift CTF:</strong> 53 место из ~200 активных команд</li>
+            <li><strong>ICPC, КФУ:</strong> участник студенческих командных олимпиад по программированию</li>
+            <li><strong>ВСОШ (Информатика):</strong> финал - 375 баллов</li>
+            <li><strong>ВКОШП:</strong> 16 место в России</li>
+        </ul>
+
+    </div>
+</div>
+</body></html>
